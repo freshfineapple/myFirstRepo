@@ -37,7 +37,7 @@ class HelloWorldTest {
             System.setOut(writeToBoth);
         }
 
-        @Test void helloWorldTest() {
+        @Test void helloWorldIsPrinted() {
             testObj.printIt();
             assertThat(sb.toString()).isEqualTo("Hello world!\n");
         }
